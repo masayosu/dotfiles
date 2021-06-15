@@ -1,0 +1,10 @@
+*~
+.DS_Store
+Desktop.ini
+Thumbs.db
+.vagrant
+*.pyc
+local/
+.envrc
+*.swp
+.config/
