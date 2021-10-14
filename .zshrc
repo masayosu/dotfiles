@@ -70,6 +70,9 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=${HOME}/.nodenv/bin:${PATH} && \
 eval "$(nodenv init -)"
 
+# krew
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
 # 色を使用出来るようにする
 autoload -Uz colors
 colors
@@ -126,7 +129,7 @@ alias vi=vim
 alias rm=rmtrash
 alias ssh='cat ~/.ssh/config.d/* > ~/.ssh/config; ssh'
 alias k=kubectl
-alias kx=kubectx
+alias kx='kubectl ctx'
 
 # diffの結果を色付け
 if [[ -x `which colordiff` ]]; then
@@ -198,3 +201,4 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 export PATH="/usr/local/opt/curl/bin:$PATH"
 
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"

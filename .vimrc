@@ -53,7 +53,6 @@ Plug 'cohama/lexima.vim'
 Plug 'juliosueiras/vim-terraform-completion'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'tpope/vim-fugitive'
 call plug#end()
 "vim-plug End
 
